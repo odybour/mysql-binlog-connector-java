@@ -57,8 +57,7 @@ public class AuthenticateSecurityPasswordCommand implements Command {
         if (clientCapabilities == 0) {
             clientCapabilities = ClientCapabilities.LONG_FLAG |
                 ClientCapabilities.PROTOCOL_41 |
-                ClientCapabilities.SECURE_CONNECTION |
-                ClientCapabilities.PLUGIN_AUTH;
+                ClientCapabilities.SECURE_CONNECTION;
 
             if (schema != null) {
                 clientCapabilities |= ClientCapabilities.CONNECT_WITH_DB;
